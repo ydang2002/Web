@@ -1,6 +1,6 @@
 .header {
     height: 120px;
-    background-image: linear-gradient(0, #fe6433, #f53e2d);
+    background-image: linear-gradient(0, #749eba, #464b6f);
 }
 
 .header__navbar {
@@ -11,6 +11,7 @@
 .header__navbar-list{
     list-style: none;
     padding-left: 0%;
+    margin-top: 4px;
 }
 
 .header__navbar-item {
@@ -25,6 +26,14 @@
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
+    cursor: pointer;
+}
+
+/*Làm mờ đi khi di chuột vào các chữ */
+.header__navbar-item:hover,
+.header__navbar-item-link :hover{
+    color: rgba(255, 255, 255, 0,7);/*lỗi khôn làm mờ đ*/
+    /*cursor: pointer;*/
 }
 
 /*chinh cho "đăng nhập, đăng kí" chữ đậm*/
@@ -36,9 +45,14 @@
     content: "";
     display: block;
     position: absolute;
-    border-left: 1px solid #0d665d;
+    border-left: 1px solid #e5eeed;
     height: 12px;
     right: -9px;
     top: 50%;
     transform: translateY(-50px);
+}
+
+.header__navbar-icon-link{
+    color: var(--white-color);
+    text-emphasis: none;
 }
