@@ -17,6 +17,7 @@
 .header__navbar-item {
     margin: 0 8px;
     position: relative;
+    /*min-height: 26px;*/
 }
 
 .header__navbar-item,
@@ -29,11 +30,20 @@
     cursor: pointer;
 }
 
+/*chỉnh icon ở giữa*/
+/*.header__navbar-item:hover,
+.header__navbar-item-link :hover
+.header__navbar-icon-link{
+    display: inline-flex;
+    align-items: center;
+}*/
+
 /*Làm mờ đi khi di chuột vào các chữ */
 .header__navbar-item:hover,
+.header__navbar-icon-link
 .header__navbar-item-link :hover{
     color: rgba(255, 255, 255, 0,7);/*lỗi khôn làm mờ đ*/
-    /*cursor: pointer;*/
+    cursor: pointer;
 }
 
 /*chinh cho "đăng nhập, đăng kí" chữ đậm*/
@@ -55,4 +65,15 @@
 .header__navbar-icon-link{
     color: var(--white-color);
     text-emphasis: none;
+}
+
+.header__navbar-icon{
+    font-size: 1.8rem;
+    margin: 0 4px;
+}
+
+/*làm mất đi bàn tay khi di chuột vào "Kết nối"*/
+.header__navba-icon-pointer{
+    cursor: text;
+    color: var(--white-color);
 }
