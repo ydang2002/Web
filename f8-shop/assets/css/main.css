@@ -17,7 +17,11 @@
 .header__navbar-item {
     margin: 0 8px;
     position: relative;
-    /*min-height: 26px;*/
+    min-height: 26px;
+}
+
+.header__navbar-item--has-qr:hover .header__qr{
+    display: block;
 }
 
 .header__navbar-item,
@@ -27,7 +31,6 @@
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
-    cursor: pointer;
 }
 
 /*chỉnh icon ở giữa*/
@@ -77,3 +80,39 @@
     cursor: text;
     color: var(--white-color);
 }
+
+/*Header QR code CSS*/
+
+.header__qr{
+    width: 186px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 8px;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease-in 0.3s;
+}
+.header__qr-img{
+    width: 100%;
+}
+
+.header__qr-apps{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__qr-link:nth-child(1){
+    margin-left: 11px;
+}
+
+.header__qr-link:nth-child(2){
+    margin-right: 11px;
+}
+
+.headeer__qr-download-img{
+    height: 16px;
+}
+
+
