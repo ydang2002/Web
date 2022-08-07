@@ -4,6 +4,9 @@
     --text-color: #333;
     --primary-color: #464b6f;
     --border-color: #dbdbdb;
+    --navbar-height: 34px;
+    --header-height: 120px;
+    --header-height-n: calc(var(--header-height) - var(--header-height));
 }
 
 * {
